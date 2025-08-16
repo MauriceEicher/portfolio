@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zur CSS-Datei -->
+    </head>
+<body>
+
+    <!-- Navigation -->
+
+    <div class="navigation" id="navigation">
+        <div class="grid">
+            <div class="item start-1 col-12">
+                <a href="index.html"><img src="img/navigation/Pfeil_navigation.webp" alt="Pfeil"><h1 class="fade_nav">Projekte</h1></a>
+            </div>
+            <div class="item start-1 col-12">
+                <a href="ueber_mich.html"><img src="img/navigation/Pfeil_navigation.webp" alt="Pfeil"><h1 class="fade_nav">Über mich</h1></a>
+            </div>
+            <div class="item start-1 col-12">
+                <a href="kontakt.html"><img src="img/navigation/Pfeil_navigation.webp" alt="Pfeil"><h1 class="fade_nav">Kontakt</h1></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid_nav">
+        <div class="item col-12">
+            <div class="topbar">
+                <div class="burger" id="burger">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+        </div> 
+    </div>    
+
+  <div style="height: 10vh;"></div>
+
+  <!-- Kontakt Schriftzug -->
+
+  <div class="grid">
+    <div class="item col-9">
+        <h1 class="bigtype_h1">Kontakt
+            <hr class="linie_bigtype expand_on_scroll">
+        </h1>
+    </div>
+  </div>
+
+  <div style="height: 20vh;"></div>
+
+  <!-- Kontaktformular(e) -->
+
+  <form action="mailto:maurice.eicher@gmail.com" method="post" enctype="text/plain" autocomplete="off">
+
+    <div class="grid">
+
+        <div class="item col-3">
+            <label for="name">Dein Name:</label><br>
+            <input class="eingabefeld" type="text" id="name" name="Name" required placeholder="Mustername">
+        </div>
+
+        <div class="item col-3">
+            <label for="email">Deine E-Mail:</label><br>
+            <input class="eingabefeld" type="email" id="email" name="Email" required placeholder="examlpe@email.com">
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="item col-6">
+            <label for="subject">Betreff:</label><br>
+            <input class="eingabefeld" type="text" id="subject" name="Betreff" required placeholder="Mein Betreff...">
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="item col-6">
+            <label for="message">Nachricht:</label><br>
+            <textarea class="eingabefeld" id="message" name="Nachricht" required placeholder="Meine Nachricht..."></textarea>
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="item col-2">
+            <button type="submit">Senden</button>
+        </div>
+
+        <div class="item col-2">
+            <button type="reset">Zurücksetzen</button>
+        </div>
+
+      </div>
+
+  </form>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="grid">
+            <div class="item col-2">
+                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <path id="circlePath"
+                        d="M 150,150
+                           m -100,0
+                           a 100,100 0 1,1 200,0
+                           a 100,100 0 1,1 -200,0" />
+                    </defs>
+                  
+                    <!-- Rotierender Textkreis -->
+                    <g class="rotating">
+                      <text class="text_footer_logo">
+                        <textPath href="#circlePath" startOffset="0" textLength="628">
+                            Maurice Eicher Grafik Design & UX Design&nbsp;
+                        </textPath>
+                      </text>
+                    </g>
+                  
+                    <!-- Größeres zentrales WebP-Bild -->
+                    <image href="img/footer/footer_logo.webp" x="91" y="88" width="120" height="120" />
+                  
+                  </svg>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="item col-3">
+                <hr class="linie_lang expand_on_scroll">
+                <p class="fade_typo"><a href="datenschutz.html">Datenschutz</a><br/><a href="impressum.html">Impressum</a></p>
+            </div>
+            <div class="item col-3">
+                <hr class="linie_lang expand_on_scroll">
+                <p class="fade_typo">Adresse:<br/>Grunbacher Straße 5<br/>71384 Weinstadt</p>
+            </div>
+            <div class="item col-3">
+                <hr class="linie_lang expand_on_scroll">
+                <p class="fade_typo">Telefon:<br/>+49 178 9076719</p>
+            </div>
+            <div class="item col-3">
+                <hr class="linie_lang expand_on_scroll">
+                <p class="fade_typo">E-Mail:<br/>maurice.eicher@gmail.com</p>
+            </div>
+        </div>
+
+        <div style="height: 10vh;"></div>
+
+        <div class="grid">
+            <div class="item col-12">
+                <p class="typo_zentriert fade_typo">© 2025 Maurice Eicher. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+
+        <div style="height: 5vh;"></div>
+
+    </footer>
+
+    <!-- Verlinkung der JS-Datei -->
+
+    <script src="script.js" defer></script>
+</body>
+</html>

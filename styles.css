@@ -1,0 +1,1414 @@
+/*---------------------------------------Verlinkung zu den Schriften---------------------------------------*/
+
+/* ibm-plex-sans-regular (400) - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/ibm-plex-sans-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibm-plex-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/ibm-plex-sans-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ibm-plex-serif-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/ibm-plex-serif-v19-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular (400) - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto-v47-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/roboto-v47-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* merriweather-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/merriweather-v31-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*---------------------------------------Inhaltsverzeichnis---------------------------------------*/
+
+/*--Body--*/
+
+/*--Typo--*/
+/*--Fade-in Animation (Für die Typo)--*/
+
+/*--Linien (Für die Typo)--*/
+/*--Fade-in Animation (Für die Linien)--*/
+
+/*--Grid / Raster--*/
+/*--Container im Grid--*/
+
+/*--Bilder & Videos und Bildunterschriften--*/
+
+/*--Buttons--*/
+
+/*--Navigation--*/
+/*--Fade-in Animation (Für die Typo in der Navigation)--*/
+
+/*--Header--*/
+
+/*--Footer--+/
+
+/*--Zum vorherigen / nächsten Projekt - Funktion--*/
+
+/*--Seite: Home / Projekte--*/
+
+/*--Seite: Kontakt--*/
+
+/*--Seite: Über mich--*/
+
+/*--Seite: mountaineer--*/
+
+/*--Seite: Lachswanderung--*/
+
+/*--Seite: Youthnited--*/
+
+/*---------------------------------------Body---------------------------------------*/
+
+body {
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+  margin: 0; /* Abstände nach Außen */
+  padding: 0; /* Abstände nach Innen */
+  overscroll-behavior: none; /* Dass man nicht "weiter scrollen" kann wenn man am Anfang / Ende der Webseite ist */
+}
+
+/*---------------------------------------Typo---------------------------------------*/
+
+/* Abstände */
+h1, h2, p {
+  margin: 0; /* Abstände nach Außen */
+  padding: 0; /* Abstände nach Innen */
+  word-break: break-word; /* Automatische Zeilenumbrüche */
+  hyphens: auto; /* Bindestriche bei den Zeilenumbrüchen */
+}
+
+/* Headline Standard */
+h1 {
+    font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+    color: #ffffff; /* Farbe: Weiß */
+    font-weight: 600; /* Schriftschnitt: Semi-Bold */
+    font-size: 3rem; /* Schriftgröße: 48px */
+    line-height: 1.35; /* Zeilenabstand: 135% */
+    letter-spacing: -0.01em; /* Buchstabenabstand: -1% */
+}
+
+/* Headline Hervorhebung */
+.serif_h1 {
+    font-family: 'IBM Plex Serif', 'Merriweather', serif; /* Schriftart */
+    color: #ffffff; /* Farbe: Weiß */
+    font-weight: 700; /* Schriftschnitt: Extra Semi-Bold */
+    font-style: italic; /* Schriftschnitt: Italic */
+    font-size: 3rem; /* Schriftgröße: 48px */
+    line-height: 1.35; /* Zeilenabstand: 135% */
+    letter-spacing: 0.02em; /* Buchstabenabstand: 2% */
+}
+
+/* H2 Headline Standard */
+h2 {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #ffffff; /* Farbe: Weiß */
+  font-weight: 600; /* Schriftschnitt: Semi-Bold */
+  font-size: 1.8rem; /* Schriftgröße: 28.8px */
+  line-height: 1.35; /* Zeilenabstand: 135% */
+  letter-spacing: 0.02em; /* Buchstabenabstand: 2% */
+}
+
+/* H2 Headline Hervorhebung */
+.serif_h2 {
+  font-family: 'IBM Plex Serif', 'Merriweather', serif; /* Schriftart */
+  color: #ffffff; /* Farbe: Weiß */
+  font-weight: 700; /* Schriftschnitt: Extra Semi-Bold */
+  font-style: italic; /* Schriftschnitt: Italic */
+  font-size: 1.8rem; /* Schriftgröße: 28.8px */
+  line-height: 1.35; /* Zeilenabstand: 135% */
+  letter-spacing: 0.04em; /* Buchstabenabstand: 4% */
+}
+
+/* Fließtext Standard */
+p {
+    font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+    color: #ffffff; /* Farbe: Weiß */
+    font-weight: 400; /* Schriftschnitt: Regular */
+    font-size: 1.125rem; /* Schriftgröße: 18px */
+    line-height: 1.55; /* Zeilenabstand: 155% */
+    letter-spacing: 0.02em; /* Buchstabenabstand: 2% */
+}
+
+/* Fließtext Hervorhebung */
+.serif_p {
+    font-family: 'IBM Plex Serif', 'Merriweather', serif; /* Schriftart */
+    color: #C3C3C3; /* Farbe: Hellgrau */
+    font-weight: 700; /* Schriftschnitt: Extra Bold */
+    font-style: italic; /* Schriftschnitt: Italic */
+    font-size: 1.125rem; /* Schriftgröße: 18px */
+    line-height: 1.55; /* Zeilenabstand: 155% */
+    letter-spacing: 0.05em; /* Buchstabenabstand: 5% */
+}
+
+/* Keywords (Über der Design Challange) */
+.keywords {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-weight: 400; /* Schriftschnitt: Regular */
+  font-size: 1.125rem; /* Schriftgröße: 18px */
+  line-height: 3.25; /* Zeilenabstand: 160% */
+  letter-spacing: 0.02em; /* Buchstabenabstand: 2% */
+}
+
+/* Typo über den langen Linien */
+.linie_h1 {
+  line-height: 0; /* Zeilenabstand: 0% */
+}
+
+/* Typo sehr Groß Plakativ */
+.bigtype_h1 {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-size: clamp(5rem, 10vw, 18rem); /* Schriftgröße */
+  font-weight: 600; /* Schriftschnitt: Semi-Bold */
+  line-height: 1.05; /* Zeilenabstand: 105% */
+  letter-spacing: -0.04em; /* Buchstabenabstand: -4% */
+}
+
+/* Typo sehr Groß Plakativ Hervorhebung */
+.bigtype_serif_h1 {
+  font-family: 'IBM Plex Serif', 'Merriweather', serif; /* Schriftart */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-size: clamp(5rem, 10vw, 18rem); /* Schriftgröße */
+  font-weight: 700; /* Schriftschnitt: Semi-Bold */
+  font-style: italic; /* Schriftschnitt: Italic */
+  line-height: 1.05; /* Zeilenabstand: 105% */
+  letter-spacing: -0.02em; /* Buchstabenabstand: -4% */
+}
+
+/* Typo Zentriert */
+.typo_zentriert {
+  text-align: center;
+}
+
+/* Typo Rechtsbündig */
+.typo_rechts {
+  text-align: right;
+}
+
+/* Typo Weiß */
+.typo_weis {
+  color: #ffffff; /* Farbe: Weiß */
+}
+
+/* Ab unter 900px Bildschirmbreite (Schrift wird kleiner) */
+@media (max-width: 900px) {
+
+  /* Headline Standard */
+  h1 {
+    font-size: 2.5rem; /* Schriftgröße: 40px */
+  }
+
+  /* Headline Hervorhebung */
+  .serif_h1 {
+    font-size: 2.5rem; /* Schriftgröße: 40px */
+  }
+
+  /* H2 Headline Standard */
+  h2 {
+    font-size: 1.4rem; /* Schriftgröße: 40px */
+  }
+
+  /* H2 Headline Hervorhebung */
+  .serif_h2 {
+    font-size: 1.4rem; /* Schriftgröße: 40px */
+  }
+
+  /* Fließtext Standard */
+  p {
+    font-size: 1rem; /* Schriftgröße: 16px */
+  }
+
+  /* Fließtext Hervorhebung */
+  .serif_p {
+    font-size: 1rem; /* Schriftgröße: 16px */
+  }
+
+  /* Keywords (Über der Design Challange) */
+  .keywords {
+    font-size: 1.rem; /* Schriftgröße: 16px */
+  }
+}
+
+/*---------------------------------------Fade-in Animation (Für die Typo)---------------------------------------*/
+
+/* Typo Elemente vor dem Fade-in */
+.fade_typo {
+  opacity: 0; /* Startet unsichtbar */
+  transform: translateY(1rem); /* Startet 16px unterhalb */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transformation */
+}
+
+/* Typo Elemente nach dem Fade-in */
+.fade_typo.visible {
+  opacity: 1; /* wird Sichtbar */
+  transform: translateY(0); /* nimmt die richtige Position ein */
+}
+
+/* Startzustand für bigtype Schrift */
+.bigtype_h1,
+.bigtype_serif_h1 {
+  opacity: 0; /* Startet unsichtbar */
+  transform: translateX(-6rem); /* Startet 96px links außerhalb */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transformation */
+}
+
+/* Sichtbar-Zustand für bigtype Schrift */
+.bigtype_h1.visible,
+.bigtype_serif_h1.visible {
+  opacity: 1; /* wird Sichtbar */
+  transform: translateX(0); /* nimmt die richtige Position ein */
+}
+
+/*---------------------------------------Linien (Für die Typo)---------------------------------------*/
+
+/* Linie kurz */
+.linie_kurz {
+  display: block; /* Linie immer in einer eigenen Zeile */
+  border: none; /* Kontur Entfernen */
+  height: 0.375rem; /* Linienstärke: 6px */
+  background-color: #C3C3C3; /* Farbe: Hellgrau */
+  width: 3rem; /* Länge: 46px */
+  margin-left: 0; /* Linksbündig */
+  margin-top: 1.25rem; /* Abstand nach oben: 20px */
+  margin-bottom: 0.5rem; /* Abstand nach unten: 8px */
+}
+
+/* Linie lang */
+.linie_lang {
+  display: block; /* Linie immer in einer eigenen Zeile */
+  border: none; /* Kontur Entfernen */
+  height: 0.125rem; /* Linienstärke: 2px */
+  background-color: #C3C3C3; /* Farbe: Hellgrau */
+  width: 100%; /* Länge: ganzer Container */
+  margin-left: 0; /* Linksbündig */
+  margin-top: 0; /* Abstand nach oben */
+  margin-bottom: 1.5rem; /* Abstand nach unten: 24px */
+}
+
+/* Linie Dick */
+.linie_dick {
+  display: block; /* Linie immer in einer eigenen Zeile */
+  border: none; /* Kontur Entfernen */
+  height: 0.25rem; /* Linienstärke: 4px */
+  background-color: #C3C3C3; /* Farbe: Hellgrau */
+  width: 100%; /* Länge: ganzer Container */
+  margin-left: 0; /* Linksbündig */
+  margin-top: 0; /* Abstand nach oben */
+  margin-bottom: 1.5rem; /* Abstand nach unten: 24px */
+}
+
+/* Linie für Große plakative Typo */
+.linie_bigtype {
+  display: block; /* Linie immer in einer eigenen Zeile */
+  border: none; /* Kontur Entfernen */
+  background-color: #C3C3C3; /* Farbe: Hellgrau */
+  width: 14%; /* Länge: 14% der Viewpoethöhe */
+  height: 0.09em;  /* Linienstärke Proportional zur Schriftstärke */
+  margin-top: 0.17em; /* Abstand nach oben Proportional zur Schriftgröße */
+  margin-left:  0; /* Linksbündig */
+  margin-bottom: 0; /* kein Abstand nach unten */
+}
+
+/* Ab unter 900px Bildschirmbreite (Abstände und Linienstärke kleiner) */
+@media (max-width: 900px) {
+
+  /* Linie kurz */
+  .linie_kurz {
+    height: 0.3125rem; /* Linienstärke: 5px */
+    width: 2.5rem; /* Länge: 40px */
+    margin-top: 1.125rem; /* Abstand nach oben: 18px */
+    margin-bottom: 1.75rem; /* Abstand nach unten: 28px */
+  }
+
+  /* Linie lang */
+  .linie_lang {
+    height: 0.09375rem; /* Linienstärke: 1.5px */
+    margin-bottom: 1rem; /* Abstand nach unten: 16px */
+  }
+
+  /* Linie Dick */
+  .linie_dick {
+    height: 0.1875rem; /* Linienstärke: 3px */
+    margin-bottom: 1rem; /* Abstand nach unten: 16px */
+  }
+}
+
+/*---------------------------------------Fade-in Animation (Für die Linien)---------------------------------------*/
+
+/*--- Linie Lang ---*/
+
+/* Vor der Animation: Breite = 0 */
+.linie_lang.expand_on_scroll {
+  width: 0; /* Länge */
+  transition: width 0.3s ease-out; /* Transformation Länge */
+  overflow: hidden; /* Sicherheit */
+}
+
+/* Sichtbar im Viewport → animiert auf volle Breite */
+.linie_lang.expand_on_scroll.visible {
+  width: 100%; /* Länge */
+}
+
+/*--- Linie Dick ---*/
+
+/* Vor der Animation: Breite = 0 */
+.linie_dick.expand_on_scroll {
+  width: 0; /* Länge */
+  transition: width 0.3s ease-out; /* Transformation Länge */
+  overflow: hidden; /* Sicherheit */
+}
+
+/* Sichtbar im Viewport → animiert auf volle Breite */
+.linie_dick.expand_on_scroll.visible {
+  width: 100%; /* Länge */
+}
+
+/*--- Linie Kurz ---*/
+
+/* Vor der Animation: Breite = 0 */
+.linie_kurz.expand_on_scroll {
+  width: 0; /* Startbreite */
+  transition: width 0.3s ease-out; /* Transformation: Länge weich einblenden */
+  overflow: hidden; /* Sicherheit: Inhalt abgeschnitten */
+}
+
+/* Sichtbar im Viewport → animiert auf feste Breite */
+.linie_kurz.expand_on_scroll.visible {
+  width: 3rem; /* Zielbreite: 46px */
+}
+
+
+/*--- Linie Bigtype ---*/
+
+/* Vor der Animation: Breite = 0 */
+.linie_bigtype.expand_on_scroll {
+  width: 0; /* Startbreite */
+  min-width: 0; /* Minimale Länge: 0px */
+  transition: width 0.4s ease-out, min-width 0.4s ease-out; /* Transformation: Länge weich einblenden */
+  overflow: hidden; /* Sicherheit: Inhalt abgeschnitten */
+}
+
+/* Sichtbar im Viewport → animiert auf volle Breite */
+.linie_bigtype.expand_on_scroll.visible {
+  width: 14%; /* Länge: 14% der Viewpoethöhe */
+  min-width: 6rem; /* Minimale Länge: 92px */
+}
+
+/* Ab unter 900px Bildschirmbreite (angepasste Zielbreite) */
+@media (max-width: 900px) {
+  .linie_kurz.expand_on_scroll.visible {
+    width: 2.5rem; /* Zielbreite mobil: 40px */
+  }
+}
+
+/*---------------------------------------Grid / Raster---------------------------------------*/
+
+/* Grid / Raster */
+.grid {
+    display: grid; /* Es ist ein Grid */
+    grid-template-columns: repeat(12, 1fr); /* Spaltenanzahl: 12 */
+    column-gap: 3.75rem;      /* Abstand der Spalten: 60px */
+    padding-left: 3.75rem;   /* Abstand innen links: 60px */
+    padding-right: 3.75rem;  /* Abstand innen rechts: 60px */
+  }
+
+/* RECHTSBÜNDIG Grid / Raster */
+.grid_rechts {
+  display: grid; /* Es ist ein Grid */
+  grid-template-columns: repeat(12, 1fr); /* Spaltenanzahl: 12 */
+  direction: rtl; /* wichtig: Reihenfolge umdrehen */
+  column-gap: 3.75rem;      /* Abstand der Spalten: 60px */
+  padding-left: 3.75rem;   /* Abstand innen links: 60px */
+  padding-right: 3.75rem;  /* Abstand innen rechts: 60px */
+}
+
+/* Einzelnes Rasterelement */
+.item {
+    margin-top: 3.75rem; /* Abstand nach oben: 60px */
+    padding: 0; /* Abstände nach innen */
+    text-align: left; /* Inhalt Linksbündig */
+    background-color: none; /* Keine Hintergrundfarbe */
+  }
+
+/* RECHTSBÜNDIG Einzelnes Rasterelement */
+.grid_rechts .item {
+  direction: ltr; /* Inhalt normal lesen */
+  text-align: left; /* Text Linksbündig */
+}
+
+/* Die verschiedenen Spaltenbreiten */
+.col-12 { grid-column-end: span 12; } /* 12 Spalten breit */
+.col-9 { grid-column-end: span 9; } /* 9 Spalten breit */
+.col-6  { grid-column-end: span 6; }  /* 6 Spalten breit */
+.col-4  { grid-column-end: span 4; }  /* 4 Spalten breit */
+.col-3  { grid-column-end: span 3; }  /* 3 Spalten breit */
+.col-2  { grid-column-end: span 2; }  /* 2 Spalten breit */
+.col-1  { grid-column-end: span 1; }  /* 1 Spalte breit */
+
+/* Die verschiedenen Startpositionierungen */
+.start-1  { grid-column-start: 1; } /* Ab Spalte 1 */
+.start-2  { grid-column-start: 2; } /* Ab Spalte 2 */
+.start-3  { grid-column-start: 3; } /* Ab Spalte 3 */
+.start-4  { grid-column-start: 4; } /* Ab Spalte 4 */
+.start-5  { grid-column-start: 5; } /* Ab Spalte 5 */
+.start-6  { grid-column-start: 6; } /* Ab Spalte 6 */
+.start-7  { grid-column-start: 7; } /* Ab Spalte 7 */
+.start-8  { grid-column-start: 8; } /* Ab Spalte 8 */
+.start-9  { grid-column-start: 9; } /* Ab Spalte 9 */
+.start-10 { grid-column-start: 10; } /* Ab Spalte 10 */
+.start-11 { grid-column-start: 11; } /* Ab Spalte 11 */
+.start-12 { grid-column-start: 12; } /* Ab Spalte 12 */
+
+/* Responsive Grid / Raster */
+
+/* Kleiner Desktop – ab unter 1440px Bildschirmbreite: 9 Spalten */
+@media (max-width: 1440px) {
+
+  /* Grid / Raster */
+  .grid, .grid_rechts {
+    grid-template-columns: repeat(9, 1fr); /* Spaltenanzahl: 9 */
+    column-gap: 3.75rem;      /* Abstand der Spalten: 60px */
+    padding-left: 3.75rem;   /* Abstand innen links: 60px */
+    padding-right: 3.75rem;  /* Abstand innen rechts: 60px */
+  }
+
+  /* Einzelnes Rasterelement */
+  .item {
+    margin-top: 3.75rem; /* Abstand nach oben: 64px */
+  }
+
+  /* Die verschiedenen Spaltenbreiten */
+  .col-12 { grid-column: span 9; } /* 9 Spalten breit */
+  .col-9  { grid-column: span 8; } /* 8 Spalten breit */
+  .col-6  { grid-column: span 6; } /* 6 Spalten breit */
+  .col-4  { grid-column: span 4; } /* 4 Spalten breit */
+  .col-3  { grid-column: span 3; } /* 3 Spalten breit */
+  .col-2  { grid-column: span 2; } /* 2 Spalten breit */
+  .col-1  { grid-column: span 1; } /* 1 Spalte breit */
+  }
+
+/* Großes Tablet – ab unter 1080px Bildschirmbreite: 6 Spalten */
+@media (max-width: 1080px) {
+
+  /* Grid / Raster */
+  .grid, .grid_rechts {
+    grid-template-columns: repeat(6, 1fr); /* Spaltenanzahl: 6 */
+    column-gap: 2rem; /* Abstand der Spalten: 32px */
+    padding-left: 2rem; /* Abstand innen links: 32px */
+    padding-right: 2rem; /* Abstand innen rechts: 32px */
+  }
+
+  /* Einzelnes Rasterelement */
+  .item {
+    margin-top: 2rem; /* Abstand nach oben: 32px */
+  }
+  
+  /* Die verschiedenen Spaltenbreiten */
+  .col-12 { grid-column: span 6; } /* 6 Spalten breit */
+  .col-9  { grid-column: span 6; } /* 6 Spalten breit */
+  .col-6  { grid-column: span 6; } /* 6 Spalten breit */
+  .col-4  { grid-column: span 4; } /* 4 Spalten breit */
+  .col-3  { grid-column: span 3; } /* 3 Spalten breit */
+  .col-2  { grid-column: span 2; } /* 2 Spalten breit */
+  .col-1  { grid-column: span 1; } /* 1 Spalte breit */
+  }
+
+/* Kleines Tablet – ab unter 900px Bildschirmbreite: 3 Spalten */
+@media (max-width: 900px) {
+
+  /* Grid / Raster */
+  .grid, .grid_rechts {
+    grid-template-columns: repeat(3, 1fr); /* Spaltenanzahl: 3 */
+    column-gap: 2rem; /* Abstand der Spalten: 32px */
+    padding-left: 2rem; /* Abstand innen links: 32px */
+    padding-right: 2rem; /* Abstand innen rechts: 32px */
+  }
+
+  /* Einzelnes Rasterelement */
+  .item {
+    margin-top: 2rem; /* Abstand nach oben: 32px */
+  }
+
+  /* Die verschiedenen Spaltenbreiten */
+  .col-12 { grid-column: span 3; } /* 3 Spalten breit */
+  .col-9  { grid-column: span 3; } /* 3 Spalten breit */
+  .col-6  { grid-column: span 3; } /* 3 Spalten breit */
+  .col-4  { grid-column: span 2; } /* 2 Spalten breit */
+  .col-3  { grid-column: span 2; } /* 2 Spalten breit */
+  .col-2  { grid-column: span 2; } /* 2 Spalten breit */
+  .col-1  { grid-column: span 1; } /* 1 Spalten breit */
+}
+  
+/* Handy – ab unter 720px Bildschirmbreite: 1 Spalte */
+@media (max-width: 720px) {
+
+  /* Grid / Raster */
+  .grid, .grid_rechts {
+    grid-template-columns: 1fr; /* Spaltenanzahl: 1 */
+    column-gap: 1rem; /* Abstand der Spalten: 16px */
+    padding-left: 1rem; /* Abstand innen links: 16px */
+    padding-right: 1rem; /* Abstand innen rechts: 16px */
+  }
+
+  /* Einzelnes Rasterelement */
+  .item {
+    margin-top: 2rem; /* Abstand nach oben: 32px */
+  }
+  
+  /* Die verschiedenen Spaltenbreiten */
+  .col-12 { grid-column: span 1; } /* 1 Spalten breit */
+  .col-9  { grid-column: span 1; } /* 1 Spalten breit */
+  .col-6  { grid-column: span 1; } /* 1 Spalten breit */
+  .col-4  { grid-column: span 1; } /* 1 Spalten breit */
+  .col-3  { grid-column: span 1; } /* 1 Spalten breit */
+  .col-2  { grid-column: span 1; } /* 1 Spalten breit */
+  .col-1  { grid-column: span 1; } /* 1 Spalten breit */
+  }
+
+/*---------------------------------------Container im Grid---------------------------------------*/
+
+/* Grid Zentriert */
+.grid_zentriert_container {
+  display: flex; /* notwendig, damit align/justify funktionieren */
+  justify-content: center; /* Inhalte horizontal zentrieren */
+}
+  
+/*---------------------------------------Bilder & Videos und Bildunterschriften---------------------------------------*/
+
+/* Video im Grid / Raster */
+.video_grid {
+  width: 100%; /* Video auf 100% der Breite des Containers setzen */
+  height: auto; /* Höhe automatisch an die Breite anpassen */
+  object-fit: cover; /* Video bleibt im richtigen Seitenverhältnis und füllt den Bereich */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+}
+
+/* Bild im Grid / Raster */
+.img_grid {
+  width: 100%; /* Bild auf 100% der Breite des Containers setzen */
+  height: auto; /* Höhe automatisch an die Breite anpassen */
+  object-fit: cover; /* Bild bleibt in der richtigen Proportion */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+}
+
+/* Bild Vollbild Container */
+.img_fullscreen {
+  width: 100%; /* Volle Bildschirmbreite */
+  height: 100vh; /* Volle Bildschirmhöhe */
+  max-width: 100%; /* Damit der Container nicht breiter als der Bildschirm wird */
+  margin: 0 auto; /* Damit der Container in der Mitte des Bildschirms bleibt */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+  box-sizing: border-box; /* Damit der Container nicht breiter als der Bildschirm wird */
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* horizontal zentrieren */
+  align-items: center; /* vertikal zentrieren */
+  overflow: hidden; /* Verhindert Überlauf */
+  transition: width 0.3s ease; /* Weicher Übergang bei animation */
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+}
+
+/* Bild Vollbild */
+.img_fullscreen img {
+  width: 100%; /* Volle Bildschirmbreite */
+  max-width: 100%; /* Damit das Bild nicht breiter als der Bildschirm wird */
+  height: 100%; /* Volle Bildschirmhöhe */
+  object-fit: cover; /* Füllt das div aus und behält Seitenverhältnis bei */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+}
+
+/* Bild Vollbild (höher als der Viewport z.B. Infografik) Container */
+.img_fullscreen_oversized {
+  width: 100%; /* Volle Bildschirmbreite */
+  height: auto; /* Höhe passt sich an die Höhe des Bildes an */
+  max-width: 100%; /* Damit der Container nicht breiter als der Bildschirm wird */
+  margin: 0 auto; /* Damit der Container in der Mitte des Bildschirms bleibt */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+  box-sizing: border-box; /* Damit der Container nicht breiter als der Bildschirm wird */
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* horizontal zentrieren */
+  align-items: center; /* vertikal zentrieren */
+  overflow: hidden; /* Verhindert Überlauf */
+  transition: width 0.3s ease; /* Weicher Übergang bei animation */
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+}
+
+/* Bild Vollbild */
+.img_fullscreen_oversized img {
+  width: 100%; /* Volle Bildschirmbreite */
+  max-width: 100%; /* Damit das Bild nicht breiter als der Bildschirm wird */
+  height: auto; /* Höhe proportional zur Breite */
+  object-fit: cover; /* Füllt das div aus und behält Seitenverhältnis bei */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+}
+
+/* Bildunterschriften */
+.bildunterschrift {
+  position: relative; /* Damit ich das Element nach oben verschieben kann, ohne das Gesammtlayout zu beeinflussen */
+  top: -3rem; /* Nach oben verschieben: 48px */
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  text-decoration: none; /* Nicht unterstrichen */
+  font-weight: 400; /* Schriftschnitt: Regular */
+  font-size: 0.8rem; /* Schriftgröße: 12.8px */
+  line-height: 3.25; /* Zeilenabstand: 160% */
+  letter-spacing: 0.03; /* Buchstabenabstand: 3% */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  transition: letter-spacing 0.5s ease;
+}
+
+/* Bildunterschriften Typo Hover */
+.bildunterschrift:hover {
+  letter-spacing: 0.05em; /* Buchstabenabstand: 5% */
+  color: #ffffff; /* Farbe: Weiß */
+}
+
+/* Großes Tablet – ab unter 1080px Bildschirmbreite: Kleinere Abstände */
+@media (max-width: 1080px) {
+
+  /* Bildunterschriften */
+  .bildunterschrift {
+    top: -2rem; /* Nach oben verschieben: 32px */
+  }
+}
+
+/*---------------------------------------Buttons---------------------------------------*/
+
+/* Button */
+button {
+  display: flex; /* Damit man den Text zentrieren kann */
+  justify-content: center; /* Text horizontal zentrieren */
+  align-items: center; /* Text vertikal zentrieren */
+  width: 100%; /* So Breit wie das darüberliegende Element */
+  padding-top: 0.5rem; /* Abstand innen oben: 8px */
+  padding-bottom: 0.5rem; /* Abstand innen unten: 8px */
+  margin: 0; /* Keine Abstände nach Außen */
+  background-color: transparent; /* transparente Fläche */
+  border: 0.2rem solid #C3C3C3; /* Linienstärke: 6px Farbe: Hellgrau */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+  text-decoration: none; /* Damit die Links nicht unterstrichen sind */
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-weight: 400; /* Schriftschnitt: Regular */
+  font-size: 1.125rem; /* Schriftgröße: 18px */
+  line-height: 1.6; /* Zeilenabstand: 160% */
+  letter-spacing: 0.02em; /* Buchstabenabstand: 2% */
+  cursor: pointer; /* Die Maus wird beim Hovern zur Hand */
+  transition: background-color 0.3s ease; /* Transition beim Hovern */
+}
+
+/* Button Hover */
+button:hover {
+  background-color: #C3C3C3; /* Hintergrundfarbe: Hellgrau */
+  color: #000; /* Schrift Farbe: Schwarz*/
+  font-weight: 600; /* Schriftschnitt: Semi-Bold */
+}
+
+/*---------------------------------------Navigation---------------------------------------*/
+
+/* Grid indem sich die Top-Bar mit Burgermenü befindet */
+.grid_nav {
+  position: fixed; /* Damit es an der selben Position bleibt bleibt */
+  z-index: 1000; /* Immer ganz oben */
+}
+
+/* Top-Bar mit Burgermenü */
+.topbar {
+  position: fixed; /* Damit es an der selben Position bleibt bleibt */
+  height: 2rem; /* Höhe: 32px */
+  display: flex; /* Flexbox aktivieren */
+  align-items: center; /* Y-Achse zentriert */
+  z-index: 1000; /* Immer ganz oben */
+}
+
+ /* Container Burgermenü */
+.burger {
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Elemente (Striche) untereinander anordnen */
+  gap: 0.5rem; /* Abstand zwischen den Elementen (Strichen): 8px */
+  cursor: pointer; /* Beim Hovern verändert sich der Mauszeiger */
+  transition: gap 0.3s ease; /* beim Hovern: Softer Übergang */
+}
+
+ /* Burgermenü Hover */
+.burger:not(.active):hover { /* Der Hover Effect setzt nur ein, wenn das Burger Icon und nicht das "X"-Icon angezeigt wird */
+  gap: 0.8rem; /* Abstand zwischen den Elementen (Strichen): 12.8px */
+}
+
+/* Die einzelnen Striche */
+.burger div {
+  width: 2.5rem; /* Länge der Linien: 40px */
+  height: 0.25rem; /* Linienstärke: 4px */
+  background-color: white; /* Linienfarbe */
+  transform-origin: center; /* Inhalte sind zentriert */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transformation: Burger-Icon zu "X" */
+}
+
+/* Erste Linie des Burger-Icon wird zu "X" */
+.burger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(0.1875rem, 0.1875rem)  ; /* Drehung und Verschiebung */
+}
+
+/* Zweite Linie des Burger-Icon verschwindet */
+.burger.active div:nth-child(2) {
+  opacity: 0; /* Unsichtbar */
+}
+
+/* Dritte Linie des Burger-Icon wird zu "X" */
+.burger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(0.1875rem, -0.1875rem)  ; /* Drehung und Verschiebung */
+}
+
+/* Wenn das Burger-Icon zu "X" geworden ist */
+.burger.active {
+  gap: 0; /* Keine Lücke zwischen den Linien */
+}
+
+/* "X"-Icon obere Linie Hover */
+.burger.active:hover div:nth-child(1) {
+  transform: rotate(45deg) translate(0.1875rem, 0.1875rem) scale(1.2); /* Linie wird skaliert (Drehung und verschiebung sind nur zur Sicherheit) */
+}
+
+/* "X"-Icon untere Linie Hover */
+.burger.active:hover div:nth-child(3) {
+  transform: rotate(-45deg) translate(0.1875rem, -0.1875rem) scale(1.2); /* Linie wird skaliert (Drehung und verschiebung sind nur zur Sicherheit) */
+}
+
+/* Container Navigation */
+.navigation {
+  position: fixed; /* Bleibt fixiert, sodass er nicht "weggescrollt" werden kann */
+  top: 0; /* Kein Abstand nach oben */
+  left: 0; /* Kein Abstand nach links */
+  width: 100%; /* Volle Bildschirmbreite */
+  height: 100vh; /* Volle Bildschirmhöhe */
+  display: flex; /* Flexbox aktivieren (Damit man die Inhalte zentrieren kann) */
+  justify-content: center; /* Zentriert horizontal (X-Achse) */
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+  opacity: 0; /* Standardmäßig unsichtbar (Bis man die Navigation anklickt) */
+  pointer-events: none; /* Sobalt die Navigation nicht "geöffnet" wurde kann man die Navigationspunkte nicht anklicken */
+  transition: opacity 0.3s ease; /* Transformation, wenn man die Navigation anklickt */
+  z-index: 999; /* Im Vordergrund, aber hinter dem Burger-Icon */
+}
+
+ /* Wenn die Navigation sichtbar ist (Wenn sie angeklickt wurde) */
+.navigation.active {
+  opacity: 1; /* Navigation Sichtbar */
+  pointer-events: all; /* Man kann Elemente im Container anklicken (Menüpunkte der Navigation) */
+}
+
+/* Grid in der Navigation */
+.navigation .grid {
+  width: 100%; /* Volle Breite */
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Elementstapelung von oben nach unten */
+  justify-content: flex-end; /* Alles ganz unten platzieren */
+  padding-bottom: 5.5rem; /* Abstand innen unten: 88px */
+}
+
+/* Links Navigation */
+.navigation a {
+  display: flex; /* Flexbox aktivieren, sodass die Elemente nebeneinander und nicht untereinander sind */
+  align-items: center; /* Elemente vertikal zentriert */
+  text-decoration: none; /* Nicht unterstrichen */
+}
+
+/* Typo Navigation */
+.navigation h1 {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  text-decoration: none; /* Links sind nicht unterstrichen */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-size: clamp(4rem, 5vw + 1rem, 8.75rem); /* Schriftgröße variiert von 64px bis 140px */
+  font-weight: 600; /* Schriftschnitt: Semi-Bold */
+  line-height: 1; /* Zeilenabstand */
+  letter-spacing: -0.02em; /* Buchstabenabstand: -2% */
+  margin-left: 1rem; /* Abstand nach links: 16px */
+}
+
+/* Container für Pfeile */
+.navigation img {
+  width: 5vw; /* Breite: 5% der Bildschirmbreite */
+  min-width: 4rem; /* Maximale Breite: 64px */
+  height: 5vw; /* Höhe: 5% der Bildschirmbreite */
+  min-height: 4rem; /* Maximale Höhe: 64px */
+  transition: transform 0.2s ease; /* Transition Transformation */
+}
+
+ /* Hover Pfeile */
+.navigation a:hover img {
+  transform: rotate(-30deg); /* Drehung 30 Grad */
+}
+
+ /* Hover Typo */
+.navigation a:hover h1 {
+  color: #ffffff; /* Farbe: Weiß */
+}
+
+/*---------------------------------------Fade-in Animation (Für die Typo in der Navigation)---------------------------------------*/
+
+/* Typo Elemente der Navigation vor dem Fade-in */
+.fade_nav {
+  opacity: 0; /* Startet unsichtbar */
+  transform: translateY(4rem); /* Startet 64px unterhalb */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transformation */
+}
+
+/* Animierte Klasse */
+.fade_nav.fade-in {
+  animation: navigationFadeIn 0.3s ease forwards; /* Animation */
+}
+
+/* Keyframes */
+@keyframes navigationFadeIn {
+  from {
+    opacity: 0; /* Startet unsichtbar */
+    transform: translateY(4rem); /* Startet 64px unterhalb */
+  }
+  to {
+    opacity: 1; /* wird Sichtbar */
+    transform: translateY(0); /* nimmt die richtige Position ein */
+  }
+}
+
+/*---------------------------------------Header---------------------------------------*/
+
+/* Header Container */
+header {
+  width: 100%; /* Volle Bildschirmbreite */
+  height: 100vh; /* Volle Bildschirmhöhe */
+  max-width: 100%; /* Damit der Container nicht breiter als der Bildschirm wird */
+  margin: 0 auto; /* Damit der Container in der Mitte des Bildschirms bleibt */
+  border-radius: 0 0 15px 15px; /* Abgerundete Ecken unten: 15px */
+  box-sizing: border-box; /* Damit der Container nicht breiter als der Bildschirm wird */
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* horizontal zentrieren */
+  align-items: center; /* vertikal zentrieren */
+  overflow: hidden; /* Verhindert Überlauf */
+  transition: width 0.3s ease; /* Weicher Übergang bei animation */
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+}
+
+/* Bild im Header */
+header img {
+  width: 100%; /* Volle Bildschirmbreite */
+  max-width: 100%; /* Damit das Bild nicht breiter als der Bildschirm wird */
+  height: 100%; /* Volle Bildschirmhöhe */
+  object-fit: cover; /* Füllt das div aus und behält Seitenverhältnis bei */
+  border-radius: 0 0 15px 15px; /* Abgerundete Ecken unten: 15px */
+}
+
+/* Video im Header */
+header video {
+  width: 100%; /* Volle Breite */
+  max-width: 100%; /* Nicht breiter als der Container */
+  height: 100%; /* Volle Höhe */
+  object-fit: cover; /* Füllt das div aus und behält Seitenverhältnis bei */
+  border-radius: 0 0 15px 15px; /* Abgerundete Ecken unten */
+}
+
+/*---------------------------------------Footer---------------------------------------*/
+
+/* Container Footer */
+footer {
+  width: 100%; /* Volle Bildschirmbreite */
+  padding-top: 16rem;
+  background-color: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  svg {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+}
+
+.rotating {
+  animation: spin 17s linear infinite;
+  transform-origin: 150px 150px;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.text_footer_logo {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  fill: #ffffff; /* Farbe: Weiß */
+  font-weight: 600; /* Schriftschnitt: Semibolt */
+  font-size: 30px; /* Schriftgröße: 18px */
+  letter-spacing: 0; /* Buchstabenabstand: 0% */
+}
+
+/* Links Footer */
+footer a {
+  text-decoration: none; /* Schrift nicht unterschtrichen */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-weight: 600; /* Schriftschnitt: Semi-Bold */
+  letter-spacing: 0.03em; /* Buchstabenabstand: 3% */
+  transition: letter-spacing 0.5s ease;
+}
+
+/* Links Footer Hover */
+footer a:hover {
+  letter-spacing: 0.07em; /* Buchstabenabstand: 7% */
+  color: #ffffff;/* Schriftfarbe: weiß */
+}
+
+/*---------------------------------------Zum vorherigen / nächsten Projekt - Funktion---------------------------------------*/
+
+/* Container für die gesammte Funktion */
+.projektdurchlauf {
+  width: 100%; /* Volle Breite */
+  margin: 0; /* Kein Abstand nach Außen */
+  padding: 0; /* Kein Abstand nach Innen */
+  display: flex; /* Flexbox aktivieren */
+  justify-content: space-between; /* Damit die Items Ganz rechts und ganz links sind */
+}
+
+/* Links zu den Projekten */
+.projektdurchlauf_link_1, .projektdurchlauf_link_2 {
+  text-decoration: none; /* Links sind nicht unterstrichen */
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Elemente untereinander */
+}
+
+/* Links zu den Projekten */
+.projektdurchlauf_link_2 {
+  align-items: flex-end; /* rechtsbündig */
+}
+
+/* Pfeile */
+.projektdurchlauf img {
+  width: 5rem; /* Breite */
+  height: auto; /* Höhe */
+  margin-bottom: 2rem; /* Abstand nach unten */
+  transition: transform 0.2s ease; /* Transition Transformation */
+}
+
+/* Headlines Projekt */
+.projektdurchlauf h2 {
+  color: #C3C3C3; /* Farbe: Hellgrau */
+}
+
+/* Schrift "nächstes projekt / vorheriges Projekt" */
+.projektdurchlauf .keywords {
+  line-height: 2; /* Zeilenabstand: 200% */
+}
+
+/* Hover Pfeil 1 */
+.projektdurchlauf_link_1:hover img {
+  transform: rotate(30deg); /* Drehung 30 Grad */
+}
+
+/* Hover Pfeil 2 */
+.projektdurchlauf_link_2:hover img {
+  transform: rotate(-30deg); /* Drehung -30 Grad */
+}
+
+/* Hover Typo */
+.projektdurchlauf_link_2:hover h2, .projektdurchlauf_link_1:hover h2, .projektdurchlauf_link_1:hover .keywords, .projektdurchlauf_link_2:hover .keywords {
+  color: #ffffff; /* Farbe: Weiß */
+}
+
+/*---------------------------------------Seite: Home / Projekte---------------------------------------*/
+
+/* Container Header Bereich der Startseite */
+.hero_index {
+  position: fixed; /* Scrollt nicht mit */
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Damit die Inhalte untereinander angeordnet werden */
+  justify-content: space-between; /* Damit die Inhalte mit möglichst viel Abstand angeordnet werden */
+  width: 100%; /* Volle Bildschirmbreite */
+  height: 100vh; /* Volley Bildschirmhöhe */
+  margin: 0; /* Abstände nach Außen */
+  padding: 0; /* Abstände nach Innen */
+  z-index: 0; /* Ganz im Hintergrund */
+}
+
+/* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
+.hero_index_img_container {
+  width: 100%; /* Volle Bildschirmbreite */
+  margin: 0;
+  margin-bottom: 3.75rem; /* Abstand nach unten: 60px */
+  padding: 0;
+}
+
+ /* Das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
+ .hero_index_img {
+  width: 100%; /* Volle Bildschirmbreite */
+  height: auto; /* Höhe des Bildes passt sich automatisch an die Breite des Bildes an */
+  display: block; /* Bild wird zum Blockelement, damit es sich im Container richtig verhält */
+}
+
+/* Kleiner Desktop – ab unter 1440px Bildschirmbreite */
+@media (max-width: 1440px) {
+
+  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
+  .hero_index_img_container {
+    margin-bottom: 3.75rem; /* Abstand nach unten: 64px */
+  }
+}
+
+/* Großes Tablet – ab unter 1080px Bildschirmbreite */
+@media (max-width: 1080px) {
+
+  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
+  .hero_index_img_container {
+    margin-bottom: 2rem; /* Abstand nach unten: 32px */
+  }
+}
+
+/* Kleines Tablet – ab unter 900px Bildschirmbreite */
+@media (max-width: 900px) {
+
+  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
+  .hero_index_img_container {
+    margin-bottom: 2rem; /* Abstand nach unten: 32px */
+  }
+}
+  
+/* Handy – ab unter 720px Bildschirmbreite */
+@media (max-width: 720px) {
+
+  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
+  .hero_index_img_container {
+    margin-bottom: 2rem; /* Abstand nach unten: 32px */
+  }
+
+  /* Das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
+  .hero_index_img {
+    background: none; /* Das vorherige Bild löschen */
+    content: url('img/index/index_header/index_header_m.webp'); /* Das neue Bild */
+  }
+}
+
+/* Abstandhalter, damit der zweite Container .content_index "starten" kann */
+.spacer_hero_index {
+  height: 100vh; /* Volle Bildschirmhöhe */
+  background-color: none; /* Keine Hintergrundfarbe */
+}
+
+/* ContainerProjekte und Footer */
+.content_index {
+  margin: 0; /* Abstände nach Außen */
+  padding: 0; /* Abstände nach Innen */
+  position: relative; /* Positionierung */
+  background: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
+  z-index: 1; /* Über dem Header */
+}
+
+/* Links zu den einzelnen Projekten */
+.projekt_link {
+  display: inline-block; /* Sonst funktioniert das Hovern nicht (Thumbnail wird sinst nicht eingeblendet) */
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  text-decoration: none; /* Links sind nicht unterstrichen */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-size: clamp(5rem, 8vw, 12rem); /* Schriftgröße */
+  font-weight: 600; /* Schriftschnitt: Semi-Bold */
+  line-height: 1.2; /* Zeilenabstand: 120% */
+  letter-spacing: -0.04em; /* Buchstabenabstand: -4% */
+}
+
+/* Links zu den einzelnen Projekten Hover */
+.projekt_link:hover {
+  display: inline-block; /* Sonst funktioniert das Hovern nicht (Thumbnail wird sinst nicht eingeblendet) */
+  color: #fff; /* Farbe: Weiß */
+}
+
+/* Die Thumbnails beim Hovern */
+.projekt_link_hover_image {
+  position: fixed; /* Damit sie über allem sind */
+  top: 0; /* Kein Abstand nach oben */
+  left: 0; /* Kein Abstand nach unten */
+  width: 30%; /* Breite 30 % des Bildschirms */
+  min-width: 15rem;
+  height: auto; /* Höhe passt sich proportionel an Breite an */
+  border-radius: 15px; /* Abgerundete Ecken */
+  display: block; /* Standardmäßig nicht sichtbar */
+  z-index: 9998; /* Im Vordergrund aber hinter der Navigation und dem Bürger Menü Icon */
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  pointer-events: none;
+}
+
+.projekt_link_hover_image.visible {
+  transform: scale(1);
+}
+
+/*---------------------------------------Seite: Kontakt---------------------------------------*/
+
+/* Labels der Eingabefelder */
+form label {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #ffffff; /* Farbe: Weiß */
+  font-weight: 400; /* Schriftschnitt: Regular */
+  font-size: 1.125rem; /* Schriftgröße: 18px */
+  line-height: 3; /* Zeilenabstand: 160% */
+  letter-spacing: 0.02; /* Buchstabenabstand: 2% */
+}
+
+/* Eingabefelder */
+.eingabefeld {
+  box-sizing: border-box; /* So Bleibt das Element immer im Raster, auch wenn padding und margin verwendet wird */
+  width: 100%; /* So Breit wie das darüberliegende Element */
+  padding: 1rem; /* Abstand innen: 16px */
+  margin: 0; /* Keine Abstände nach Außen */
+  background-color: #C3C3C3; /* transparente Fläche */
+  border: 0.2rem solid #C3C3C3; /* Linienstärke: 6px Farbe: Hellgrau */
+  border-radius: 15px; /* Abgerundete Ecken: 15px */
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #000000; /* Farbe: Schwarz */
+  font-weight: 400; /* Schriftschnitt: Regular */
+  font-size: 1.125rem; /* Schriftgröße: 18px */
+  line-height: 1.6; /* Zeilenabstand: 160% */
+  letter-spacing: 0.02; /* Buchstabenabstand: 2% */
+}
+
+/* Eingabefeld für den Inhalt der E-Mail */
+textarea.eingabefeld {
+  resize: none; /* So Ist die Größe des Textfeldes vorgegeben und kann nicht von dem Nutzer beliebig geändert werden */
+  height: 20rem; /* Höhe: 420px */
+}
+
+/* Wenn man ein Eingabefeld angeklickt hat */
+.eingabefeld:focus {
+  outline: none; /* Entfernt den blauen Standardrand */
+  border: 0.2rem solid #8A8A8A; /* Linienstärke: 6px Farbe: Grau */
+}
+
+/* Platzhalter in den Eingabefeldern */
+.eingabefeld::placeholder {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #8A8A8A; /* Farbe: Grau */
+  font-weight: 400; /* Schriftschnitt: Regular */
+  font-size: 1.125rem; /* Schriftgröße: 18px */
+  line-height: 1.6; /* Zeilenabstand: 160% */
+  letter-spacing: 0.02; /* Buchstabenabstand: 2% */
+}
+
+/*---------------------------------------Seite: Über mich---------------------------------------*/
+
+/* Container Header Bereich der Über mich Seite */
+.hero_ueber_mich {
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Damit die Inhalte untereinander angeordnet werden */
+  justify-content: flex-end; /* Inhalte mit maximalen Abstand anordnen */
+  width: 100%; /* Volle Bildschirmbreite */
+  height: 100vh; /* Volley Bildschirmhöhe */
+  margin: 0; /* Abstände nach Außen */
+  padding: 0; /* Abstände nach Innen */
+}
+
+/* Container für das Bild ("über mich" Schriftzug) im Header Bereich der Seite */
+.hero_ueber_mich_img_container {
+  width: 100%; /* Volle Bildschirmbreite */
+  margin: 0;
+  margin-bottom: 3.75rem; /* Abstand nach unten: 60px */
+  padding: 0;
+}
+
+ /* Das Bild ("über mich" Schriftzug) im Header Bereich der Seite */
+ .hero_ueber_mich_img {
+  width: 100%; /* Volle Bildschirmbreite */
+  height: auto; /* Höhe des Bildes passt sich automatisch an die Breite des Bildes an */
+  display: block; /* Bild wird zum Blockelement, damit es sich im Container richtig verhält */
+}
+
+/* Typo Zitat Serif */
+.werdegang_zitat_serif {
+  font-family: 'IBM Plex Serif', 'Merriweather', serif; /* Schriftart */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-size: clamp(5rem, 8vw, 12rem); /* Schriftgröße */
+  font-weight: 700; /* Schriftschnitt: Extra Semi-Bold */
+  line-height: 1.2; /* Zeilenabstand: 120% */
+  font-style: italic; /* Schriftschnitt: Italic */
+  letter-spacing: -0.015em; /* Buchstabenabstand: -1.5% */
+}
+
+/* Typo Lebensabschnitte Werdegang & Typo Zitat */
+.werdegang_zitat {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  font-size: clamp(5rem, 8vw, 12rem); /* Schriftgröße */
+  font-weight: 600; /* Schriftschnitt: Semi-Bold */
+  line-height: 1.2; /* Zeilenabstand: 120% */
+  letter-spacing: -0.03em; /* Buchstabenabstand: -3% */
+}
+
+/* Typo Block Werdegang (Headline & Jahreszahl) */
+.item-werdegang {
+  margin-bottom: -3rem; /* Abstand nach unten: -48px */
+}
+
+/* Kleiner Desktop – ab unter 1440px Bildschirmbreite */
+@media (max-width: 1440px) {
+
+  /* Container für das Bild ("über mich" Schriftzug) im Header Bereich der Seite */
+  .hero_ueber_mich_img_container {
+    margin-bottom: 3.75rem; /* Abstand nach unten: 64px */
+  }
+
+  /* Typo Block Werdegang (Headline & Jahreszahl) */
+  .item-werdegang {
+    margin-bottom: -3rem; /* Abstand nach unten: -48px */
+  }
+}
+
+/* Großes Tablet – ab unter 1080px Bildschirmbreite */
+@media (max-width: 1080px) {
+
+  /* Container für das Bild ("über mich" Schriftzug) im Header Bereich der Seite */
+  .hero_ueber_mich_img_container {
+    margin-bottom: 2rem; /* Abstand nach unten: 32px */
+  }
+
+  /* Typo Block Werdegang (Headline & Jahreszahl) */
+  .item-werdegang {
+    margin-bottom: -2rem; /* Abstand nach unten: -32px */
+  }
+}
+
+/* Kleines Tablet – ab unter 900px Bildschirmbreite */
+@media (max-width: 900px) {
+
+  /* Container für das Bild ("über mich" Schriftzug) im Header Bereich der Seite */
+  .hero_ueber_mich_img_container {
+    margin-bottom: 2rem; /* Abstand nach unten: 32px */
+  }
+
+  /* Typo Block Werdegang (Headline & Jahreszahl) */
+  .item-werdegang {
+    margin-bottom: -2rem; /* Abstand nach unten: -32px */
+  }
+}
+  
+/* Handy – ab unter 720px Bildschirmbreite */
+@media (max-width: 720px) {
+
+  /* Container für das Bild ("über mich" Schriftzug) im Header Bereich der Seite */
+  .hero_ueber_mich_img_container {
+    margin-bottom: 2rem; /* Abstand nach unten: 32px */
+  }
+
+  /* Typo Block Werdegang (Headline & Jahreszahl) */
+  .item-werdegang {
+    margin-bottom: -2rem; /* Abstand nach unten: -32px */
+  }
+}
+
+/*---------------------------------------Seite: mountaineer---------------------------------------*/
+
+/* Container für die Konstruktion des Buchstaben »R« */
+.konstruktion_r_container {
+  width: 50vw; /* Breite: 6% der Bildschirmbreite */
+  min-width: 20rem; /* Maximale Breite: 320px */
+  height: auto; /* Höhe immer proportional Bildschirmbreite */
+}
+
+/* Container für den Schriftzug "Quer durch die Natur" */
+.artwork_natur_container {
+  width: 60vw; /* Breite: 6% der Bildschirmbreite */
+  min-width: 20rem; /* Maximale Breite: 420px */
+  height: auto; /* Höhe immer proportional Bildschirmbreite */
+}
+
+/*---------------------------------------Seite: Lachswanderung---------------------------------------*/
+
+/* »Text Eintauchen« */
+.eintauchen_text {
+  position: sticky; /* Damit der Text stehen bleibt */
+  top: 50%; /* Abstand nach oben: 50% des Viewports */
+  transform: translateY(-50%); /* Damit der Text genau in der Mitte vom Bildschirm stehen bleibt */
+  z-index: 0; /* Im Hintergrund */
+  pointer-events: none; /* verhindert Interaktion */
+}
+
+/* Alles unter Wasser */
+.meer_container {
+  position: relative; /* Damit der z Index funktioniert */
+  z-index: 1; /* Überhalb der »eintauchen« Schrift */
+}
+
+/* Bild: Meer Illustration */
+.meer {
+  width: 100%; /* Volle Bildschirmbreite */
+  max-width: 100%; /* Damit das Bild nicht breiter als der Bildschirm wird */
+  height: auto; /* Höhe passt sich automatisch an die Breite an */
+  object-fit: cover; /* Füllt das div aus und behält Seitenverhältnis bei */
+  border-radius: 0; /* Keine abgerundeten Ecken */
+  margin-bottom: -1rem;
+}
+
+/*---------------------------------------Seite: Youthnited---------------------------------------*/
+
+/* Container für die Logo Konstruktion Illustration */
+.konstruktion_container {
+  width: 50vw; /* Breite: 6% der Bildschirmbreite */
+  min-width: 16rem; /* Maximale Breite: 80px */
+  height: 50vw; /* Höhe: 6% der Bildschirmbreite */
+  min-height: 16rem; /* Maximale Höhe: 80px */
+}
+
+/* Container für die Gehirn Illustration ("Kopf einschalten") */
+.gehirn_container {
+  width: 20vw; /* Breite: 6% der Bildschirmbreite */
+  min-width: 12rem; /* Maximale Breite: 80px */
+  height: 20vw; /* Höhe: 6% der Bildschirmbreite */
+  min-height: 12rem; /* Maximale Höhe: 80px */
+}
+
+/* Bilder Gehirn & Konstruktion */
+.konstruktion_container img, .gehirn_container img {
+  width: 100%; /* Bildbreite = Breite des Containers */
+  height: 100%; /* Bildhöhe = Höhe des Containers */
+}
+
+/* Link Gehirn */
+.gehirn_link {
+  text-decoration: none; /* Nicht standardmäßig unterstrichen */
+  color: #C3C3C3; /* Farbe: Hellgrau */
+  transition: letter-spacing 0.5s ease;
+}
+
+/* Link Gehirn Hover */
+.gehirn_link:hover {
+  color: #ffffff; /* Farbe: Weiß */
+  letter-spacing: 0.1em; /* Buchstabenabstand: 10% */
+}
