@@ -1,3 +1,29 @@
+
+
+
+
+//---------------------------0            Inhalt            0---------------------------
+
+
+//-Beim Neuladen der Seite startet man immer ganz oben-
+
+//-Fade-In Schrift & Linien-
+
+//-Navigation Burgermenü & Fade-In Schrift-
+
+//-Scroll Animation Bilder (So hoch wie der Viewport)-
+//-Scroll Animation Bilder (Höher als der Viewport)-
+
+//-Startseite Gehirn Effekt-
+//-Startseite Projekte Thumbnails Hover Effekt-
+
+//-PVision Seite Personas Bildwechsel-
+
+//-Lachswanderung Seite große Infografik Scrolleffekt-
+
+
+
+
 //---------------------------Beim Neuladen der Seite startet man immer ganz oben---------------------------
 
 window.history.scrollRestoration = 'manual'; // verhindert automatisches Zurückscrollen
@@ -157,6 +183,34 @@ window.addEventListener('scroll', () => {
   });
 });
 
+//---------------------------Startseite Gehirn Effekt---------------------------
+
+const einschaltenLink = document.getElementById("einschaltenLink");
+const gehirnBild = document.getElementById("gehirnBild");
+
+if (einschaltenLink && gehirnBild) {
+
+  // Bildpfade
+  const bildFarbe = "img/index/index_header/gehirn_schwarz.webp";
+  const bildGrau = "img/index/index_header/gehirn_gedanke.webp";
+
+  // Zustand
+  let istEingeschaltet = false;
+
+  einschaltenLink.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (istEingeschaltet) {
+      gehirnBild.src = bildFarbe;
+    } else {
+      gehirnBild.src = bildGrau;
+    }
+
+    istEingeschaltet = !istEingeschaltet;
+  });
+
+}
+
 //---------------------------Startseite Projekte Thumbnails Hover Effekt---------------------------
 
 const projektLinks = document.querySelectorAll('.projekt_link');
@@ -195,26 +249,133 @@ projektLinks.forEach(link => {
   });
 });
 
-//---------------------------Youthnited Seite "Gehirn einschalten" Effekt---------------------------
+//---------------------------PVision Seite Personas Bildwechsel---------------------------
 
-const einschaltenLink = document.getElementById("einschaltenLink");
-  const gehirnBild = document.getElementById("gehirnBild");
+const personaZurueck = document.getElementById("persona_zurueck");
+const personaVorwaerts = document.getElementById("persona_vorwaerts");
+const personaBild = document.getElementById("img_persona");
+
+if (personaZurueck && personaVorwaerts && personaBild) {
 
   // Bildpfade
-  const bildFarbe = "img/youthnited/youthnited_gehirn/youthnited_gehirn_weis.webp";
-  const bildGrau = "img/youthnited/youthnited_gehirn/youthnited_gehirn_farbe.webp";
+  const persona1 = "img/pvision/pvision_personas/pvision_persona_1.webp";
+  const persona2 = "img/pvision/pvision_personas/pvision_persona_2.webp";
+  const persona3 = "img/pvision/pvision_personas/pvision_persona_3.webp";
 
-  // Zustand: Bild ist aktiv (eingeschaltet) oder nicht
-  let istEingeschaltet = false;
+  // Zustand
+  let aktuellePersona = 1;
 
-  einschaltenLink.addEventListener("click", function (e) {
+  // Vorwärts
+  personaVorwaerts.addEventListener("click", function (e) {
+
     e.preventDefault();
 
-    if (istEingeschaltet) {
-      gehirnBild.src = bildFarbe;
-    } else {
-      gehirnBild.src = bildGrau;
+    if (aktuellePersona === 1) {
+      personaBild.src = persona2;
+      aktuellePersona = 2;
+    } 
+    else if (aktuellePersona === 2) {
+      personaBild.src = persona3;
+      aktuellePersona = 3;
+    } 
+    else {
+      personaBild.src = persona1;
+      aktuellePersona = 1;
     }
 
-    istEingeschaltet = !istEingeschaltet; // Zustand umkehren
   });
+
+  // Rückwärts
+  personaZurueck.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    if (aktuellePersona === 3) {
+      personaBild.src = persona2;
+      aktuellePersona = 2;
+    } 
+    else if (aktuellePersona === 2) {
+      personaBild.src = persona1;
+      aktuellePersona = 1;
+    } 
+    else {
+      personaBild.src = persona3;
+      aktuellePersona = 3;
+    }
+
+  });
+
+}
+
+//---------------------------Lachswanderung Seite große Infografik Scrolleffekt---------------------------
+
+const img = document.querySelector('.infografik_scroll');
+const wrapper = document.querySelector('.infografik_wrapper');
+
+const desiredVisibleRadius = 15;
+let minScale = 1;
+
+function calculateMinScale() {
+  const targetHeight = window.innerHeight * 0.8; // 80vh
+  const currentHeight = img.offsetHeight || 1;
+  minScale = Math.min(1, targetHeight / currentHeight);
+
+  // WICHTIG gegen das Flackern: Der Wrapper behält die Originalhöhe als Platzhalter!
+  wrapper.style.height = `${currentHeight}px`;
+}
+
+function applyScale(scale) {
+  const radius = desiredVisibleRadius / scale;
+  
+  gsap.to(img, {
+    scale: scale,
+    borderRadius: `${radius}px`,
+    duration: 0.5,
+    ease: "power2.out",
+    overwrite: "auto"
+  });
+}
+
+function onScroll() {
+  // Wir messen jetzt den Wrapper, weil dieser seine Position im Dokument NIE verändert
+  const wrapperRect = wrapper.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+  const targetOffset = windowHeight * 0.1; // 10vh Versatz
+
+  // Wie weit ist die Unterkante des Wrappers vom unteren Bildschirmrand entfernt?
+  const distanceScrolled = windowHeight - wrapperRect.bottom;
+
+  if (distanceScrolled < 0) {
+    // Phase 1: Unterkante hat den Boden noch nicht erreicht
+    img.classList.remove('is-fixed');
+    applyScale(1);
+
+  } else if (distanceScrolled >= 0 && distanceScrolled < targetOffset) {
+    // Phase 2: Unterkante am Boden -> Verkleinern läuft über 0.5s
+    img.classList.remove('is-fixed');
+    applyScale(minScale);
+
+  } else {
+    // Phase 3: 10vh überschritten -> Dasselbe Bild wird auf fixed gesetzt
+    applyScale(minScale);
+    img.classList.add('is-fixed');
+  }
+}
+
+// Events
+window.addEventListener('scroll', onScroll, { passive: true });
+
+window.addEventListener('load', () => {
+  calculateMinScale();
+  onScroll();
+});
+
+img.onload = () => {
+  calculateMinScale();
+  onScroll();
+};
+
+window.addEventListener('resize', () => {
+  calculateMinScale();
+  onScroll();
+});

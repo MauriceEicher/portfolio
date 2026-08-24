@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lachswanderung</title>
+        <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg"> <!-- Icon auf dem Tab im Browser -->
         <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zur CSS-Datei -->
     </head>
 <body>
@@ -87,7 +88,7 @@
 
   <div class="grid">
     <div class="item col-4">
-        <p class="keywords fade_typo">Infografik / Layout / Illustration</p>
+        <p class="keywords fade_typo">Infografik | Layout | Illustration</p>
         <h1 class="fade_typo"><span class="serif_h1 fade_typo">Design</span> Challenge.
           <hr class="linie_kurz expand_on_scroll">
         </h1>
@@ -107,77 +108,50 @@
 
   <!-- Große Infografik -->
 
-  <div class="img_fullscreen_oversized">
-    <img 
-      src="img/lachswanderung/lachswanderung_infografik/lachswanderung_infografik_vollbild_1920.webp"
-      srcset="
-        img/lachswanderung/lachswanderung_infografik/lachswanderung_infografik_vollbild_1920.webp 1920w,
-        img/lachswanderung/lachswanderung_infografik/lachswanderung_infografik_vollbild_3820.webp 3840w
-      "
-      alt="Infografik zum Thema »Lachswanderung«" loading="lazy">
-  </div>
-
-  <!-- Text zum Lachs -->
-
-  <div class="grid_rechts">
-    <div class="item col-3">
-        <hr class="linie_lang expand_on_scroll">
-        <p class="fade_typo">Doch nach einem weltweiten Bestandsrückgang um 23 % zwischen 2006 und 2023 wird der Atlantische Lachs auf der Roten Liste global als »potenziell gefährdet« und europaweit als »gefährdet« eingestuft.</p>
-    </div>
-    <div class="item col-3">
-        <hr class="linie_lang expand_on_scroll">
-        <p class="fade_typo">Der bis zu 1,5 Meter lange Atlantische Lachs (Salmo salar) durchstreift die Flüsse Europas und Nordamerikas sowie den gesamten Nordatlantik auf der Suche nach Nahrung und Laichplätzen. Die gemeinsamen Vorfahren der Lachsfische lebten bereits vor 40 Millionen Jahren auf unserem Planeten.</p>
-    </div>
+  <div class="infografik_wrapper">
+  <img 
+    src="img/lachswanderung/lachswanderung_infografik/lachswanderung_infografik_vollbild_1920.webp"
+    srcset="
+      img/lachswanderung/lachswanderung_infografik/lachswanderung_infografik_vollbild_1920.webp 1920w,
+      img/lachswanderung/lachswanderung_infografik/lachswanderung_infografik_vollbild_3820.webp 3840w
+    "
+    alt="Infografik zum Thema »Lachswanderung«" 
+    class="infografik_scroll" 
+    loading="lazy">
   </div>
 
   <div style="height: 40vh;"></div>
 
-  <!-- Skizzen -->
+  <!-- Layout Infografik -->
 
-  <div class="grid">
-    <div class="item col-4">
-        <img 
-            src="img/lachswanderung/lachswanderung_skizzen/lachswanderung_skizze_640.webp"
-            srcset="
-            img/lachswanderung/lachswanderung_skizzen/lachswanderung_skizze_640.webp 1920w,
-            img/lachswanderung/lachswanderung_skizzen/lachswanderung_skizze_960.webp 3840w
-            "
-            alt="Handskizze der Infografik" class="img_grid" loading="lazy">
-    </div>
-    <div class="item col-4">
-        <img 
-            src="img/lachswanderung/lachswanderung_skizzen/lachswanderung_infografik_640.webp"
-            srcset="
-            img/lachswanderung/lachswanderung_skizzen/lachswanderung_infografik_640.webp 1920w,
-            img/lachswanderung/lachswanderung_skizzen/lachswanderung_infografik_960.webp 3840w
-            "
-            alt="Die finale Infografik" class="img_grid" loading="lazy">
+  <div class="grid" style="position: sticky; top: 10vh;">
+    <div class="item col-3">
+        <hr class="linie_lang expand_on_scroll">
+        <p class="fade_typo">Layout & Blickführung</p>
     </div>
   </div>
 
-  <div class="grid">
-    <div class="item col-3">
-        <hr class="linie_lang expand_on_scroll">
-        <p class="serif_p fade_typo">Progress.</p>
-        <p class="fade_typo">Vom Ideenscribble zum finalen Layout.</p>
-    </div>
+  <img 
+    src="img/lachswanderung/lachswanderung_layout/lachswanderung_infografik_layout_1920.webp"
+    srcset="
+    "
+    alt="Layout der Infografik" 
+    class="layout_infografik" 
+    loading="lazy">
   </div>
 
   <div style="height: 40vh;"></div>
 
-  <!-- Eintauchen Schriftzug -->
-
-  <div class="eintauchen_text">
-    <div class="grid">
-        <div class="item col-12">
-            <h1 class="bigtype_h1"><span class="bigtype_serif_h1" style="letter-spacing: 0em;">ei</span><span class="bigtype_serif_h1" style="letter-spacing: -0.02em;">n</span>tauchen.
-                <hr class="linie_bigtype expand_on_scroll">
-            </h1>
-        </div>
-      </div>
+  <img 
+    src="img/lachswanderung/lachswanderung_layout/lachswanderung_infografik_blickfuehrung_1920.webp"
+    srcset="
+    "
+    alt="Blickführung der Infografik" 
+    class="layout_infografik" 
+    loading="lazy">
   </div>
 
-  <div style="height: 30vh;"></div>
+  <div style="height: 40vh;"></div>
 
   <!-- Meer Illustration -->
 
@@ -192,100 +166,88 @@
 
   <div style="height: 20vh; background-color: #1c1c1c;"></div>
 
-  <!-- Illustrationen Headline -->
+  <!-- Skizzen -->
 
   <div class="grid" style="background-color: #1c1c1c;">
-    <div class="item col-12">
-        <h1 class="bigtype_h1">Illustrationen.</h1>
+    <div class="item col-9">
+        <h1 class="bigtype_h1">progress</h1>
     </div>
   </div>
 
   <div class="grid" style="background-color: #1c1c1c;">
+    <div class="item col-4">
+        <img 
+            src="img/lachswanderung/lachswanderung_skizzen/lachswanderung_skizze_1_960.webp"
+            alt="Die finale Infografik" class="img_grid" loading="lazy">
+    </div>
+    <div class="item col-4">
+        <img 
+            src="img/lachswanderung/lachswanderung_skizzen/lachswanderung_skizze_2_960.webp"
+            alt="Handskizze der Infografik" class="img_grid" loading="lazy">
+    </div>
     <div class="item col-3">
         <hr class="linie_lang expand_on_scroll">
-        <p class="fade_typo">Die Illustrationen der Infografik wurden multimedial erstellt. Die Basis wurde händisch – hauptsächlich mit Aquarellfarben – erstellt und anschließend digital weiterbearbeitet.</p>
+        <p class="fade_typo">Angewandt wurden die vier Schritte zur Infografik nach Stefan Fichtel (2022): das Ideenscribble, das Inhaltsscribble, der Designentwurf und die finale Abnahme.</p>
+        <a href="https://www.mitp.de/IT-WEB/KI-Data-Science/Praxisbuch-Infografik.html" target="_blank" class="link_datei"><p class="fade_typo">Quelle: Fichtel (2022)</p></a>
     </div>
   </div>
 
-  <div style="height: 30vh; background-color: #1c1c1c;"></div>
+  <div style="height: 40vh; background-color: #1c1c1c;"></div>
 
-  <!-- Illustrationen Progress -->
+  <!-- Insta -->
 
-  <div class="grid" style="background-color: #1c1c1c;">
-    <div class="item col-3">
-        <img 
-            src="img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_1_640.webp"
-            srcset="
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_1_640.webp 1920w,
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_1_960.webp 3840w
-            "
-            alt="Illustration Lachs händisch" class="img_grid" loading="lazy">
-            <div style="height: 3rem;"></div>
-
-        <hr class="linie_lang expand_on_scroll">
-        <p class="serif_p fade_typo">1. Händisch</p>
-        <p class="fade_typo">Die Illustration erfolgt zunächst händisch.</p>
-    </div>
-    <div class="item col-3">
-        <img 
-            src="img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_2_640.webp"
-            srcset="
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_2_640.webp 1920w,
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_2_960.webp 3840w
-            "
-            alt="Illustration Lachs Freigestellt" class="img_grid" loading="lazy">
-
-            <div style="height: 3rem;"></div>
-        <hr class="linie_lang expand_on_scroll">
-        <p class="serif_p fade_typo">2. Freistellen</p>
-        <p class="fade_typo">Die händische Illustration wird dann eingescannt und freigestellt.</p>
-    </div>
-    <div class="item col-3">
-        <img 
-            src="img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_3_640.webp"
-            srcset="
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_3_640.webp 1920w,
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_3_960.webp 3840w
-            "
-            alt="Illustration Lachs mit angepassten Farben" class="img_grid" loading="lazy">
-
-            <div style="height: 3rem;"></div>
-        <hr class="linie_lang expand_on_scroll">
-        <p class="serif_p fade_typo">3. Farbanpassung</p>
-        <p class="fade_typo">Um die Illustration lebendiger wirken zu lassen, werden anschließend die Farben angepasst.</p>
-    </div>
-    <div class="item col-3">
-        <img 
-            src="img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_4_640.webp"
-            srcset="
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_4_640.webp 1920w,
-            img/lachswanderung/lachswanderung_illustrationen/lachswanderung_illustration_4_960.webp 3840w
-            "
-            alt="Illustration Lachs mit Licht- & Schattenflächen." class="img_grid" loading="lazy">
-
-            <div style="height: 3rem;"></div>
-        <hr class="linie_lang expand_on_scroll">
-        <p class="serif_p fade_typo">4. Licht & Schatten</p>
-        <p class="fade_typo">Zuletzt werden Licht- und Schattenflächen hinzugefügt, um eine plastischere Wirkung zu erzielen.</p>
+  <div class="grid" style="background-color: #96b2de; border-radius: 15px 15px 0 0;">
+    <div class="item col-9">
+        <h1 class="bigtype_h1" style="color: #2e3744;">Insta-Lachs</h1>
     </div>
   </div>
 
-  <div style="height: 50vh; background-color: #1c1c1c;"></div>
+  <div class="grid" style="background-color: #96b2de;">
+    <div class="item start-1 col-3">
+        <hr class="linie_lang expand_on_scroll" style="background-color: white;">
+        <p class="fade_typo" style="color: black;">Die Infografik als Feed Post, Story und Reel.</p>
+    </div>
+    <div class="item col-9">
+        <video class="video_grid" autoplay muted loop playsinline
+            poster="img/lachswanderung/lachswanderung_insta/insta_alle_formate_1920.webp">
+            <source src="vid/lachswanderung/lachswanderung_insta/insta_alle_formate_1920.mp4" type="video/mp4">
+            Dein Browser unterstützt kein HTML5-Video.
+        </video>
+    </div>
+    <div class="item start-4 col-9">
+        <a href="https://www.ls.graphics/" class="bildunterschrift fade_typo" style="color: #2e3744;" target="_blank" rel="noopener noreferrer">Mockup iPhone von: ls.graphics</a>
+    </div>
+  </div>
+
+  <div style="height: 20vh; background-color: #96b2de;"></div>
+
+  <div class="grid" style="background-color: #96b2de;">
+        <div class="item start-1 col-12">
+            <hr class="linie_dick expand_on_scroll" style="background-color: white;">
+            <a class="projekt_link fade_typo link_blau" href="https://www.instagram.com/ba.infografik/" target="_blank">Zu den Insta-Infografiken</a><br/>
+            <p class="keywords fade_typo" style="color: black;">@ba.infografik</p>
+            <hr class="linie_dick expand_on_scroll" style="background-color: white;">
+        </div>
+      </div>
+
+  <div style="height: 20vh; background-color: #96b2de; border-radius: 0 0 15px 15px;"></div>
+
+  <div style="height: 20vh; background-color: #1c1c1c;"></div>
 
   <!-- Zum vorherigen / nächsten Projekt -->
 
   <div class="grid" style="background-color: #1c1c1c;">
     <div class="item col-12 projektdurchlauf">
 
-        <a href="youthnited.html" class="projektdurchlauf_link_1">
+        <a href="mountaineer.html" class="projektdurchlauf_link_1">
           <img src="img/projektdurchlauf/projektdurchlauf_pfeil_1.webp" alt="Pfeil">
-          <h2 class="fade_typo"><span style="letter-spacing:  0.03em;">»</span>Youthnite<span style="letter-spacing:  0.1em;">d</span>«</h2>
+          <h2 class="fade_typo"><span style="letter-spacing:  0.1em;">»</span>mountainee<span style="letter-spacing:  0.1em;">r</span>«</h2>
           <p class="keywords fade_typo">Vorheriges Projekt</p>
         </a>
 
-        <a href="creative_lab.html" class="projektdurchlauf_link_2">
+        <a href="pvision.html" class="projektdurchlauf_link_2">
           <img src="img/projektdurchlauf/projektdurchlauf_pfeil_2.webp" alt="Pfeil">
-          <h2 class="typo_rechts fade_typo"><span style="letter-spacing:  0.1em;">»</span>Creative La<span style="letter-spacing:  0.1em;">b</span>«</h2>
+          <h2 class="typo_rechts fade_typo"><span style="letter-spacing:  0.1em;">»</span>PVisio<span style="letter-spacing:  0.1em;">n</span>«</h2>
           <p class="keywords typo_rechts fade_typo">Nächstes Projekt</p>
         </a>
 
@@ -357,8 +319,9 @@
     </footer>
   </div>
 
-    <!-- Verlinkung der JS-Datei -->
+    <!-- Verlinkung der JS-Datei und GASP -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script.js" defer></script>
 </body>
 </html>

@@ -88,7 +88,7 @@
 
 /*--Seite: Lachswanderung--*/
 
-/*--Seite: Youthnited--*/
+/*--Seite: PVision--*/
 
 /*---------------------------------------Body---------------------------------------*/
 
@@ -151,8 +151,8 @@ h2 {
   letter-spacing: 0.04em; /* Buchstabenabstand: 4% */
 }
 
-/* Fließtext Standard */
-p {
+/* Fließtext Standard & Aufzählungen Fließtext */
+p, .liste_bulletpoints_p, .liste_nummeriert_p {
     font-family: 'IBM Plex Sans', 'Roboto', sans-serif; /* Schriftart */
     color: #ffffff; /* Farbe: Weiß */
     font-weight: 400; /* Schriftschnitt: Regular */
@@ -208,6 +208,22 @@ p {
   letter-spacing: -0.02em; /* Buchstabenabstand: -4% */
 }
 
+/* Liste Bulletpoints Fließtext */
+.liste_bulletpoints_p {
+  list-style-type: disc; /* Bulletpoints */
+  padding-left: 15px; /* Abstand nach Innen Links 15px */
+  margin-top: 0; /* Abstand nach Oben 0 */
+  margin-bottom: 0; /* Abstand nach Unten 0 */
+}
+
+/* Liste Nummeriert Fließtext */
+.liste_nummeriert_p {
+  list-style-type: decimal; /* Nummeriert */
+  padding-left: 20px; /* Abstand nach Innen Links 20px */
+  margin-top: 0; /* Abstand nach Oben 0 */
+  margin-bottom: 0; /* Abstand nach Unten 0 */
+}
+
 /* Typo Zentriert */
 .typo_zentriert {
   text-align: center;
@@ -220,6 +236,16 @@ p {
 
 /* Typo Weiß */
 .typo_weis {
+  color: #ffffff; /* Farbe: Weiß */
+}
+
+/* Link für (PDF)-Dokumente */
+.link_datei, .link_datei p {
+  color: #C3C3C3; /* Farbe: Hellgrau */
+}
+
+/* Link für (PDF)-Dokumente Hover */
+.link_datei:hover, .link_datei p:hover {
   color: #ffffff; /* Farbe: Weiß */
 }
 
@@ -1060,63 +1086,17 @@ footer a:hover {
   margin: 0; /* Abstände nach Außen */
   padding: 0; /* Abstände nach Innen */
   z-index: 0; /* Ganz im Hintergrund */
+
+  /* Hintergrundbild des Containers */
+  background-color: #ff7a00;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
-.hero_index_img_container {
-  width: 100%; /* Volle Bildschirmbreite */
-  margin: 0;
+.hero_index .grid {
   margin-bottom: 3.75rem; /* Abstand nach unten: 60px */
-  padding: 0;
-}
-
- /* Das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
- .hero_index_img {
-  width: 100%; /* Volle Bildschirmbreite */
-  height: auto; /* Höhe des Bildes passt sich automatisch an die Breite des Bildes an */
-  display: block; /* Bild wird zum Blockelement, damit es sich im Container richtig verhält */
-}
-
-/* Kleiner Desktop – ab unter 1440px Bildschirmbreite */
-@media (max-width: 1440px) {
-
-  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
-  .hero_index_img_container {
-    margin-bottom: 3.75rem; /* Abstand nach unten: 64px */
-  }
-}
-
-/* Großes Tablet – ab unter 1080px Bildschirmbreite */
-@media (max-width: 1080px) {
-
-  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
-  .hero_index_img_container {
-    margin-bottom: 2rem; /* Abstand nach unten: 32px */
-  }
-}
-
-/* Kleines Tablet – ab unter 900px Bildschirmbreite */
-@media (max-width: 900px) {
-
-  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
-  .hero_index_img_container {
-    margin-bottom: 2rem; /* Abstand nach unten: 32px */
-  }
-}
-  
-/* Handy – ab unter 720px Bildschirmbreite */
-@media (max-width: 720px) {
-
-  /* Container für das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
-  .hero_index_img_container {
-    margin-bottom: 2rem; /* Abstand nach unten: 32px */
-  }
-
-  /* Das Bild ("maurice" Schriftzug) im Header Bereich der Startseite */
-  .hero_index_img {
-    background: none; /* Das vorherige Bild löschen */
-    content: url('img/index/index_header/index_header_m.webp'); /* Das neue Bild */
-  }
 }
 
 /* Abstandhalter, damit der zweite Container .content_index "starten" kann */
@@ -1132,6 +1112,38 @@ footer a:hover {
   position: relative; /* Positionierung */
   background: #1C1C1C; /* Hintergrundfarbe: Dunkelgrau */
   z-index: 1; /* Über dem Header */
+}
+
+/* Container für die Gehirn Illustration ("Kopf einschalten") */
+.gehirn_container {
+  width: 20vw; /* Breite: 6% der Bildschirmbreite */
+  min-width: 12rem; /* Maximale Breite: 80px */
+  height: 20vw; /* Höhe: 6% der Bildschirmbreite */
+  min-height: 12rem; /* Maximale Höhe: 80px */
+}
+
+/* Bilder Gehirn */
+.gehirn_container img {
+  width: 100%; /* Bildbreite = Breite des Containers */
+  height: 100%; /* Bildhöhe = Höhe des Containers */
+}
+
+/* Link Gehirn */
+.gehirn_link {
+  text-decoration: none; /* Nicht standardmäßig unterstrichen */
+  color: black; /* Farbe: Schwarz */
+  background: transparent;
+  border: 0.125rem solid black; /* Linienstärke: 2px und Weiß */
+  padding: 0.05em 0.3em 0.15em 0.3em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: letter-spacing 0.5s ease;
+}
+
+/* Link Gehirn Hover */
+.gehirn_link:hover {
+  letter-spacing: 0.1em; /* Buchstabenabstand: 10% */
+  border: 0.125rem solid white; /* Linienstärke: 2px und Schwarz */
 }
 
 /* Links zu den einzelnen Projekten */
@@ -1335,13 +1347,6 @@ textarea.eingabefeld {
 
 /*---------------------------------------Seite: mountaineer---------------------------------------*/
 
-/* Container für die Konstruktion des Buchstaben »R« */
-.konstruktion_r_container {
-  width: 50vw; /* Breite: 6% der Bildschirmbreite */
-  min-width: 20rem; /* Maximale Breite: 320px */
-  height: auto; /* Höhe immer proportional Bildschirmbreite */
-}
-
 /* Container für den Schriftzug "Quer durch die Natur" */
 .artwork_natur_container {
   width: 60vw; /* Breite: 6% der Bildschirmbreite */
@@ -1351,19 +1356,46 @@ textarea.eingabefeld {
 
 /*---------------------------------------Seite: Lachswanderung---------------------------------------*/
 
-/* »Text Eintauchen« */
-.eintauchen_text {
-  position: sticky; /* Damit der Text stehen bleibt */
-  top: 50%; /* Abstand nach oben: 50% des Viewports */
-  transform: translateY(-50%); /* Damit der Text genau in der Mitte vom Bildschirm stehen bleibt */
-  z-index: 0; /* Im Hintergrund */
-  pointer-events: none; /* verhindert Interaktion */
+/* Container in dem sich die Infografik befindet */
+.infografik_wrapper {
+  position: relative;
+  width: 100%; /* Volle Breite */
+  /* Die Höhe wird per JS dynamisch auf die Originalhöhe des Bildes gesetzt */
+}
+
+/* Die große Infografik */
+img.infografik_scroll {
+  width: 100%; /* Volle Breite */
+  height: auto; /* Proportional zur Breite */
+  display: block;
+  transform-origin: bottom center;
+  will-change: transform, border-radius;
+}
+
+/* Klemmen des Bildes */
+img.infografik_scroll.is-fixed {
+  position: fixed;
+  bottom: 10vh;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Layout Lachswanderung Bild */
+.layout_infografik {
+  position: sticky;
+  top: 10vh;
+  height: 80vh;
+  display: block;
+  margin: 0 auto;
+  z-index: 2; /* Überhalb der Infografik */
+  border-radius: 15px; /* Abgerundete Ecken */
 }
 
 /* Alles unter Wasser */
 .meer_container {
   position: relative; /* Damit der z Index funktioniert */
-  z-index: 1; /* Überhalb der »eintauchen« Schrift */
+  z-index: 10; /* Überhalb der Infografik */
 }
 
 /* Bild: Meer Illustration */
@@ -1376,39 +1408,28 @@ textarea.eingabefeld {
   margin-bottom: -1rem;
 }
 
-/*---------------------------------------Seite: Youthnited---------------------------------------*/
-
-/* Container für die Logo Konstruktion Illustration */
-.konstruktion_container {
-  width: 50vw; /* Breite: 6% der Bildschirmbreite */
-  min-width: 16rem; /* Maximale Breite: 80px */
-  height: 50vw; /* Höhe: 6% der Bildschirmbreite */
-  min-height: 16rem; /* Maximale Höhe: 80px */
+/* Bild Vollbild Globus */
+.img_fullscreen_globus {
+  width: 100%; /* Volle Bildschirmbreite */
+  max-width: 100%; /* Damit der Container nicht breiter als der Bildschirm wird */
+  margin: 0 auto; /* Damit der Container in der Mitte des Bildschirms bleibt */
+  box-sizing: border-box; /* Damit der Container nicht breiter als der Bildschirm wird */
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* horizontal zentrieren */
+  align-items: center; /* vertikal zentrieren */
+  overflow: hidden; /* Verhindert Überlauf */
+  background-color: #96b2de; /* Hintergrundfarbe Blau */
 }
 
-/* Container für die Gehirn Illustration ("Kopf einschalten") */
-.gehirn_container {
-  width: 20vw; /* Breite: 6% der Bildschirmbreite */
-  min-width: 12rem; /* Maximale Breite: 80px */
-  height: 20vw; /* Höhe: 6% der Bildschirmbreite */
-  min-height: 12rem; /* Maximale Höhe: 80px */
+/* Link blau (Für Insta) */
+.link_blau {
+  color: #2e3744;
 }
 
-/* Bilder Gehirn & Konstruktion */
-.konstruktion_container img, .gehirn_container img {
-  width: 100%; /* Bildbreite = Breite des Containers */
-  height: 100%; /* Bildhöhe = Höhe des Containers */
-}
+/*---------------------------------------Seite: PVision---------------------------------------*/
 
-/* Link Gehirn */
-.gehirn_link {
-  text-decoration: none; /* Nicht standardmäßig unterstrichen */
-  color: #C3C3C3; /* Farbe: Hellgrau */
-  transition: letter-spacing 0.5s ease;
-}
-
-/* Link Gehirn Hover */
-.gehirn_link:hover {
-  color: #ffffff; /* Farbe: Weiß */
-  letter-spacing: 0.1em; /* Buchstabenabstand: 10% */
+/* Pfeile bei Personas Hover */
+#persona_zurueck img,
+#persona_vorwaerts img {
+  cursor: pointer;
 }
